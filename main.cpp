@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-
+#include <iomanip>
 int main()
 {
 
@@ -38,7 +38,8 @@ int main()
   std::cout << '\n';
 
 // Displays trip information.
-  std::cout << "Location";
+  std::cout << "Location" << std::setw(8) << "Days" << std::setw(12) << "Hotel" << std::setw(12) << "Meal" << std::setw(12) << "Total\n";
+  std::cout << location << std::setw(12) << days << std::setw(12) << "$" << hotel << std::setw(11) << "$" << meal << std::setw(9) << "$" << total << '\n';
 
 return 0;
 }
