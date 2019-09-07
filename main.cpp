@@ -7,7 +7,7 @@
 int main()
 {
 
-  double location, days, hotel, meal;
+  double days, hotel, meal;
 // Welcome
   std::cout << "Welcome to the Business Trip Tracker!\n";
 
@@ -16,6 +16,7 @@ int main()
 
 // Asks location of trip.
   std::cout << "What is the business trip location? ";
+  std::string location;
   std::cin >> location;
 
 // Asks number of days the trip will take.
@@ -23,11 +24,11 @@ int main()
   std::cin >> days;
 
 // Asks cost of hotel.
-  std::cout << "What is the total hotel expense? ";
+  std::cout << "What is the total hotel expense? $";
   std::cin >> hotel;
 
 // Asks cost of meal.
-  std::cout << "What is the total meal expense? ";
+  std::cout << "What is the total meal expense? $";
   std::cin >> meal;
 
 // Calculate total cost of hotel and meal.
@@ -37,7 +38,7 @@ int main()
   std::cout << '\n';
 
 // Displays trip information.
-
+  std::cout << "Location";
 
 return 0;
 }
